@@ -4,6 +4,7 @@ import com.mepr.prova.models.ProdutoModel;
 import com.mepr.prova.repositories.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.security.Provider;
 import java.util.List;
@@ -20,7 +21,7 @@ public class ProdutoService {
         return produtoRepository.save(produtoModel);
     }
 
-    public List<ProdutoModel> findAll(ProdutoModel produtoModel){
+    public ProdutoModel<List<ProdutoModel> findAll(ProdutoModel produtoModel){
         return produtoRepository.findAll(produtoModel);
     }
 
