@@ -1,6 +1,6 @@
 package com.mepr.prova.enums;
 
-public enum ProdutoEnum {
+public enum StatusProduto {
     DISPONIVEL,
     ESGOTADO,
     INATIVO

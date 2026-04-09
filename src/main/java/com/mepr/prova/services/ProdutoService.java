@@ -21,7 +21,7 @@ public class ProdutoService {
         return produtoRepository.save(produtoModel);
     }
 
-    public ProdutoModel<List<ProdutoModel> findAll(ProdutoModel produtoModel){
+    public ProdutoModel<List<ProdutoModel>> findAll(ProdutoModel produtoModel){
         return produtoRepository.findAll(produtoModel);
     }
 
@@ -32,5 +32,5 @@ public class ProdutoService {
     public void deletar(Long id){
         produtoRepository.deleteById(id);
     }
-
+// eu tentei
 }

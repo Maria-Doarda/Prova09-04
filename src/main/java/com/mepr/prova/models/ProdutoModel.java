@@ -1,6 +1,6 @@
 package com.mepr.prova.models;
 
-import com.mepr.prova.enums.ProdutoEnum;
+import com.mepr.prova.enums.StatusProduto;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -16,7 +16,7 @@ public class ProdutoModel {
     private String nome;
     private String descricao;
     private BigDecimal preco;
-    private ProdutoEnum status;
+    private StatusProduto status;
 
     public ProdutoModel(){}
 
@@ -52,11 +52,11 @@ public class ProdutoModel {
         this.preco = preco;
     }
 
-    public ProdutoEnum getStatus() {
+    public StatusProduto getStatus() {
         return status;
     }
 
-    public void setStatus(ProdutoEnum status) {
+    public void setStatus(StatusProduto status) {
         this.status = status;
     }
 }
